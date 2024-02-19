@@ -16,7 +16,7 @@ const TransitionProvider = ({ children }) => {
   return (
     <div
       key={pathName}
-      className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100"
+      className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100 overflow-auto"
     >
       <motion.div
         className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"

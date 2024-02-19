@@ -1,14 +1,9 @@
 "use client";
-import Brain from "@/components/Brain";
 import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 
 const AboutPage = () => {
-  const containerRef = useRef();
-
-  const { scrollYProgress } = useScroll({ container: containerRef });
-
   const skillRef = useRef();
   // const isSkillRefInView = useInView(skillRef, {once:true});
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
@@ -24,9 +19,9 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="h-full overflow-y-auto lg:flex" ref={containerRef}>
+      <div className="h-full lg:flex justify-center">
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-20 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
@@ -76,7 +71,7 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* SKILL TITLE */}
             <motion.h1
-              initial={{ x: "-300px" }}
+              initial={{ x: "-600px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
@@ -85,7 +80,7 @@ const AboutPage = () => {
             </motion.h1>
             {/* SKILL LIST */}
             <motion.div
-              initial={{ x: "-300px" }}
+              initial={{ x: "-600px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
@@ -184,7 +179,7 @@ const AboutPage = () => {
           >
             {/* EXPERIENCE TITLE */}
             <motion.h1
-              initial={{ x: "-300px" }}
+              initial={{ x: "-600px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
@@ -193,7 +188,7 @@ const AboutPage = () => {
             </motion.h1>
             {/* EXPERIENCE LIST */}
             <motion.div
-              initial={{ x: "-300px" }}
+              initial={{ x: "-600px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               className=""
             >
@@ -297,10 +292,6 @@ const AboutPage = () => {
               </div>
             </motion.div>
           </div>
-        </div>
-        {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
-          <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>
     </motion.div>
