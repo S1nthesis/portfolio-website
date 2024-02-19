@@ -16,6 +16,22 @@ const links = [
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
+    const logoVariants = {
+      hover: {
+        // scale: 1.1,
+        backgroundColor: ["#ff0000", "#00ff00", "#0000ff"],
+        transition: {
+          type: "tween",
+          duration: 1,
+          repeat: Infinity,
+          repeatType: "reverse",
+        },
+      },
+      unhover: {
+        backgroundColor: "#000000",
+      },
+    };    
+
     const topVariants = {
       closed: {
         rotate: 0,
@@ -25,6 +41,7 @@ const Navbar = () => {
         backgroundColor: "rgb(255,255,255)",
       },
     };
+
     const centerVariants = {
       closed: {
         opacity: 1,
@@ -78,16 +95,20 @@ const Navbar = () => {
           </div>
           {/* LOGO */}
           <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
-            <Link
-              href="/"
-              className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
-            >
-              <span className="text-white mr-1">Chris</span>
-              <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">Vu</span>
+            <Link href="/" className="flex items-center justify-center">
+              <motion.div
+                whileHover="hover"
+                whileTap="hover"
+                variants={logoVariants}
+                initial="unhover"
+                className="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center"
+              >
+                <span className="text-lg font-semibold">CV</span>
+              </motion.div>
             </Link>
           </div>
           {/* SOCIAL */}
-          <div className="hidden md:flex gap-4 w-1/3">
+          <div className="hidden md:flex gap-4 w-1/3 justify-end">
               <Link href="https://github.com/S1nthesis">
                 <Image src="/github.png" alt="GitHub" width={24} height={24} />
               </Link>
