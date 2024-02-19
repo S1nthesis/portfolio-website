@@ -65,7 +65,7 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
         >
           <span>Message</span>
           <textarea
@@ -73,7 +73,7 @@ const ContactPage = () => {
             className="bg-transparent outline resize-none"
             name="user_message"
           />
-          <span>My mail address is:</span>
+          <span>My email address is:</span>
           <input
             name="user_email"
             type="text"
