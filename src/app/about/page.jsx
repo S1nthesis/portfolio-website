@@ -41,8 +41,8 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Hey there! I'm a junior at Texas A&M University, majoring in Computer Science and set to graduate with Engineering Honors in 2025.
-              My passion lies in exploring the diverse realms of technology, from data science to cybersecurity and software development. I'm all about embracing challenges and learning from them to become a more well-rounded individual.
+              Hey there! I&#8217;m a junior at Texas A&M University, majoring in Computer Science and set to graduate with Engineering Honors in 2025.
+              My passion lies in exploring the diverse realms of technology, from data science to cybersecurity and software development. I&#8217;m all about embracing challenges and learning from them to become a more well-rounded individual.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
