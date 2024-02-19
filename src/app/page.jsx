@@ -16,9 +16,8 @@ const Homepage = () => {
     {/* DESC */}
     <p className="md:text-xl">
       Welcome to my digital playground! I'm passionate about using technology to
-      make the world a better place. Whether it's crafting sleek websites,
-      exploring the depths of machine learning, or understanding how people
-      interact with computers, I'm driven by a desire to create meaningful
+      make the world a better place. Whether it's crafting sleek websites or
+      exploring the depths of machine learning, I'm driven by a desire to create meaningful
       solutions. Let's shape a future where technology enhances our lives in
       incredible ways!
     </p>
