@@ -14,8 +14,10 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-          <Image src="/hero.gif" alt="" fill className="object-contain" />
+        <div className="h-1/2 lg:h-full lg:w-1/2 relative overflow-hidden">
+          <div className="w-full h-full transition-transform duration-300 transform hover:scale-110">
+            <Image src="/hero.gif" alt="" fill className="object-contain" />
+          </div>
         </div>
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
@@ -33,12 +35,12 @@ const Homepage = () => {
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
             <Link href="/portfolio">
-              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-gray-800">
                 View My Work
               </button>
             </Link>
             <Link href="/contact">
-              <button className="p-4 rounded-lg ring-1 ring-black">
+              <button className="p-4 rounded-lg ring-1 ring-black hover:bg-gray-100">
                 Contact Me
               </button>
             </Link>

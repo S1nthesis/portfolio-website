@@ -25,13 +25,17 @@ const AboutPage = () => {
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
-            <Image
-              src="/about.gif"
-              alt=""
-              width={112}
-              height={112}
-              className="w-28 h-28 rounded-full object-cover"
-            />
+            <div className="relative overflow-hidden">
+              <div className="w-28 h-28 transition-transform duration-300 transform hover:scale-110">
+                <Image
+                  src="/about.gif"
+                  alt=""
+                  width={112}
+                  height={112}
+                  className="w-full h-full rounded-full object-cover"
+                />
+              </div>
+            </div>
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}

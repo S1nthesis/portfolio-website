@@ -90,7 +90,7 @@ const Navbar = () => {
           {/* LINKS */}
           <div className="hidden md:flex gap-4 w-1/3">
             {links.map(link=>(
-                <NavLink link={link} key={link.title}/>
+              <NavLink link={link} key={link.title}/>
             ))}
           </div>
           {/* LOGO */}
@@ -109,12 +109,16 @@ const Navbar = () => {
           </div>
           {/* SOCIAL */}
           <div className="hidden md:flex gap-4 w-1/3 justify-end">
+            <motion.div whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
               <Link href="https://github.com/S1nthesis">
                 <Image src="/github.png" alt="GitHub" width={24} height={24} />
               </Link>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
               <Link href="https://www.linkedin.com/in/christophervu25/">
                 <Image src="/linkedin.png" alt="GitHub" width={24} height={24} />
               </Link>
+            </motion.div>
           </div>
           {/* RESPONSIVE MENU */}
           <div className="md:hidden">
