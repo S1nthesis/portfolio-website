@@ -1,5 +1,5 @@
 "use client";
-import { motion, useInView, useScroll } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 
