@@ -41,40 +41,47 @@ const items = [
 
 const PortfolioPage = () => {
   return (
-    <div className="">
-      <h1 className="text-3xl font-bold text-center mb-8">My Works</h1>
-      <div className="flex flex-wrap justify-center">
-        {items.map((item) => (
-          <motion.div
-            key={item.id}
-            className="max-w-sm rounded overflow-hidden shadow-lg m-4"
-            style={{
-              background: `linear-gradient(to right, ${item.color})`,
-            }}
-            whileHover={{ scale: 1.05 }}
-          >
-            <div className={`bg-gradient-to-r ${item.color}`} style={{ height: "100%" }}>
-              <div className="flex justify-center">
-                <div className="p-4 md:h-64 lg:h-80 xl:h-96 flex justify-center">
-                    <Image src={item.img} alt={item.title} width={300} height={300} className="object-contain" />
+    <motion.div
+      className="h-full"
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}
+    >
+      <div className="">
+        <h1 className="text-3xl font-bold text-center mb-8">My Works</h1>
+        <div className="flex flex-wrap justify-center">
+          {items.map((item) => (
+            <motion.div
+              key={item.id}
+              className="max-w-sm rounded overflow-hidden shadow-lg m-4"
+              style={{
+                background: `linear-gradient(to right, ${item.color})`,
+              }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <div className={`bg-gradient-to-r ${item.color}`} style={{ height: "100%" }}>
+                <div className="flex justify-center">
+                  <div className="p-4 md:h-64 lg:h-80 xl:h-96 flex justify-center">
+                      <Image src={item.img} alt={item.title} width={300} height={300} className="object-contain" />
+                  </div>
                 </div>
-              </div>
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{item.title}</div>
-                <p className="text-gray-700 text-base">{item.desc}</p>
-              </div>
-              {item.link && ( // Conditionally render the button if item.link is not blank
-                <div className="px-6 py-4 text-right">
-                  <Link href={item.link} className="bg-white hover:bg-blue-700 text-black font-bold py-2 px-4 rounded">
-                    Visit
-                  </Link>
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">{item.title}</div>
+                  <p className="text-gray-700 text-base">{item.desc}</p>
                 </div>
-              )}
-            </div>
-          </motion.div>
-        ))}
+                {item.link && ( // Conditionally render the button if item.link is not blank
+                  <div className="px-6 py-4 text-right">
+                    <Link href={item.link} className="bg-white hover:bg-blue-700 text-black font-bold py-2 px-4 rounded">
+                      Visit
+                    </Link>
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
