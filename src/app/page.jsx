@@ -1,4 +1,3 @@
-import { Noto_Sans_Khudawadi } from "next/font/google";
 import Image from "next/image";
 
 const Homepage = () => {
@@ -15,10 +14,10 @@ const Homepage = () => {
     </h1>
     {/* DESC */}
     <p className="md:text-xl">
-      Welcome to my digital playground! I'm passionate about using technology to
-      make the world a better place. Whether it's crafting sleek websites or
-      exploring the depths of machine learning, I'm driven by a desire to create meaningful
-      solutions. Let's shape a future where technology enhances our lives in
+      Welcome to my digital playground! I&#39;m passionate about using technology to
+      make the world a better place. Whether it&#39;s crafting sleek websites or
+      exploring the depths of machine learning, I&#39;m driven by a desire to create meaningful
+      solutions. Let&#39;s shape a future where technology enhances our lives in
       incredible ways!
     </p>
       {/* BUTTONS */}
