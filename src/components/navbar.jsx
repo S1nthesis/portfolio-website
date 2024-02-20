@@ -89,13 +89,12 @@ const Navbar = () => {
 
   const socialMediaListVariants = {
     closed: {
-      y: "100vh",
+      y: -10,
+      opacity: 0,
     },
     opened: {
       y: 0,
-      transition: {
-        when: "beforeChildren",
-      },
+      opacity: 1,
     },
   };
 
