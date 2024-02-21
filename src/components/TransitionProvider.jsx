@@ -17,12 +17,6 @@ const TransitionProvider = ({ children }) => {
     <div
       key={pathName}
       className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100 overflow-auto"
-      style={{
-        paddingTop: 'env(safe-area-inset-top, 1rem)',
-        paddingRight: 'env(safe-area-inset-right, 1rem)',
-        paddingBottom: 'env(safe-area-inset-bottom, 1rem)',
-        paddingLeft: 'env(safe-area-inset-left, 1rem)',
-      }}
     >
       <motion.div
         className="h-screen w-screen bg-black fixed rounded-b-[100px] z-40"
