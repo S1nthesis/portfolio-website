@@ -22,7 +22,6 @@ const TransitionProvider = ({ children }) => {
         paddingRight: 'env(safe-area-inset-right, 1rem)',
         paddingBottom: 'env(safe-area-inset-bottom, 1rem)',
         paddingLeft: 'env(safe-area-inset-left, 1rem)',
-        padding: '1rem'
       }}
     >
       <motion.div
