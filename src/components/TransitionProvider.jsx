@@ -1,6 +1,6 @@
 "use client";
 
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
