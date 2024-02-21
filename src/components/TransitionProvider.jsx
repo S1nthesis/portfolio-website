@@ -41,7 +41,7 @@ const TransitionProvider = ({ children }) => {
       <div className="h-24">
         <Navbar />
       </div>
-      <div className="h-[calc(100vh-6rem)] overflow-y-auto">{children}</div>
+      <div className="">{children}</div>
     </div>
   );
 };

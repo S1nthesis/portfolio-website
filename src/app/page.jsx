@@ -7,7 +7,7 @@ import Link from "next/link";
 const Homepage = () => {
   return (
     <motion.div
-      className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 justify-center"
+      className="h-[calc(100vh-6rem)] flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 justify-center"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
@@ -15,12 +15,7 @@ const Homepage = () => {
       {/* IMAGE CONTAINER */}
       <div className="h-1/2 lg:h-full lg:w-1/2 relative overflow-hidden hidden lg:block">
         <div className="w-full h-full transition-transform duration-300 transform relative">
-          <Image
-            src="/hero.gif"
-            alt=""
-            layout="fill"
-            objectFit="contain"
-          />
+          <Image src="/hero.gif" alt="" fill className="object-contain" />
         </div>
       </div>
       {/* TEXT CONTAINER */}
