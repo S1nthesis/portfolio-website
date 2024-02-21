@@ -16,7 +16,7 @@ const TransitionProvider = ({ children }) => {
   return (
     <div
       key={pathName}
-      className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100 overflow-auto"
+      className="bg-gradient-to-b from-blue-100 to-red-100 overflow-auto"
     >
       {/* <motion.div
         className="h-screen w-screen bg-black fixed rounded-b-[100px] z-40"
@@ -46,7 +46,7 @@ const TransitionProvider = ({ children }) => {
       <div className="h-24">
         <Navbar />
       </div>
-      <div className="">{children}</div>
+      <div className="h-[calc(100vh-6rem)]">{children}</div>
     </div>
   );
 };
