@@ -178,7 +178,7 @@ const AboutPage = () => {
           </div>
           {/* EXPERIENCE CONTAINER */}
           <div
-            className="flex flex-col gap-12 justify-center pb-48"
+            className="flex flex-col gap-12 justify-center pb-64"
             ref={experienceRef}
           >
             {/* EXPERIENCE TITLE */}

@@ -47,7 +47,7 @@ const PortfolioPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="">
+      <div className="pb-16">
         <h1 className="text-3xl font-bold text-center mb-8">My Works</h1>
         <div className="flex flex-wrap justify-center">
           {items.map((item) => (
