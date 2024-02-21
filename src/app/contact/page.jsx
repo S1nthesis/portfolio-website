@@ -72,6 +72,7 @@ const ContactPage = () => {
             rows={6}
             className="bg-transparent outline resize-none"
             name="user_message"
+            style={{ minHeight: '100px' }}
           />
           <span>My email address is:</span>
           <input
