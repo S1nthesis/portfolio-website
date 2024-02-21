@@ -31,7 +31,7 @@ const TransitionProvider = ({ children }) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+        <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 uppercase font-normal">
           {displayTitle}
         </span>
       </motion.div>
