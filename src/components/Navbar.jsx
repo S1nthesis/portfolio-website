@@ -176,7 +176,7 @@ const Navbar = () => {
                 className=""
                 key={link.title}
               >
-                <Link href={link.url}>{link.title}</Link>
+                <NavLink link={link} key={link.title} />
               </motion.div>
             ))}
             {/* SOCIAL MEDIA LINKS IN RESPONSIVE MENU */}
