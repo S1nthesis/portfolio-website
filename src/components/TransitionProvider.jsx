@@ -31,7 +31,9 @@ const TransitionProvider = ({ children }) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        {displayTitle}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          {displayTitle}
+        </span>
       </motion.div>
       <motion.div
         className="h-screen w-screen bg-black fixed rounded-t-[100px] bottom-0 z-30"
