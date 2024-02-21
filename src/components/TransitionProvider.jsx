@@ -46,7 +46,7 @@ const TransitionProvider = ({ children }) => {
       <div className="h-24">
         <Navbar />
       </div>
-      <div className="h-[calc(100vh-6rem)]">{children}</div>
+      <div className="min-h-[calc(100vh-6rem)]">{children}</div>
     </div>
   );
 };
