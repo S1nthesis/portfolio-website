@@ -15,7 +15,7 @@ const Homepage = () => {
       {/* IMAGE CONTAINER */}
       <div className="h-1/2 lg:h-full lg:w-1/2 relative overflow-hidden hidden lg:block">
         <div className="w-full h-full transition-transform duration-300 transform relative">
-          <Image src="/hero.gif" alt="" fill className="object-contain" />
+          <Image src="/home/hero.gif" alt="" fill className="object-contain" />
         </div>
       </div>
       {/* TEXT CONTAINER */}

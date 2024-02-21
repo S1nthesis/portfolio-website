@@ -28,7 +28,7 @@ const AboutPage = () => {
             <div className="relative overflow-hidden">
               <div className="w-28 h-28 transition-transform duration-300 transform hover:scale-110">
                 <Image
-                  src="/about.gif"
+                  src="/about/about.gif"
                   alt=""
                   width={112}
                   height={112}

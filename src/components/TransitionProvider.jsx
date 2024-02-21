@@ -18,12 +18,12 @@ const TransitionProvider = ({ children }) => {
       key={pathName}
       className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100 overflow-auto"
     >
-      <motion.div
+      {/* <motion.div
         className="h-screen w-screen bg-black fixed rounded-b-[100px] z-40"
         animate={{ height: "0vh" }}
         exit={{ height: "140vh" }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-      />
+      /> */}
       <motion.div
         className="fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-8xl cursor-default z-50 w-fit h-fit pointer-events-none"
         initial={{ opacity: 1 }}
@@ -37,6 +37,11 @@ const TransitionProvider = ({ children }) => {
         className="h-screen w-screen bg-black fixed rounded-t-[100px] bottom-0 z-30"
         initial={{ height: "140vh" }}
         animate={{ height: "0vh", transition: { delay: 0.5 } }}
+        style={{ 
+          backgroundImage: 'url("")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       />
       <div className="h-24">
         <Navbar />

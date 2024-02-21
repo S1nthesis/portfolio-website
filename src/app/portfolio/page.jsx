@@ -10,7 +10,7 @@ const items = [
     color: "from-purple-300 to-red-300",
     title: "Aegis",
     desc: "I developed a hackathon registration system for 1000+ university students worldwide. Utilized RESTful APIs to transmit user data to MongoDB and AWS. Collaborated with organizers, incorporating feedback.",
-    img: "/aegis.png",
+    img: "/projects/aegis.png",
     link: "https://github.com/tamu-datathon-org/aegis",
   },
   {
@@ -18,7 +18,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "Harmonia",
     desc: "As the tech lead of TAMU Datathon, I contributed to a webpage on our site integrating OAuth2 to link Discord accounts to user profiles. Built with Next.js, React, TypeScript, and CSS.",
-    img: "/harmonia.png",
+    img: "/projects/harmonia.png",
     link: "https://github.com/tamu-datathon-org/harmonia",
   },
   {
@@ -26,7 +26,7 @@ const items = [
     color: "from-blue-300 to-violet-300",
     title: "Threading & Synchronization",
     desc: "As a developer, I managed synchronization, achieved parallel data transfers, and conducted thorough manual testing for robust multithreaded functionality in C++.",
-    img: "/threading.png",
+    img: "/projects/threading.png",
     link: "",
   },
   {
@@ -34,7 +34,7 @@ const items = [
     color: "from-violet-300 to-purple-300",
     title: "Externia Mobile RPG",
     desc: "I developed a mobile 2D RPG with levels, puzzles, and enemies. Managed team as project manager, level designer, and lead. Implemented Unity2D Physics and vectors in C# for iOS/Android.",
-    img: "/externia.png",
+    img: "/projects/externia.png",
     link: "https://github.com/S1nthesis/Externia-Mobile-RPG",
   },
 ];

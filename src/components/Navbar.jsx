@@ -12,8 +12,8 @@ const links = [
 ];
 
 const socialMediaLinks = [
-  { url: "https://github.com/S1nthesis", icon: "/github.png", alt: "GitHub" },
-  { url: "https://www.linkedin.com/in/christophervu25/", icon: "/linkedin.png", alt: "LinkedIn" },
+  { url: "https://github.com/S1nthesis", icon: "/socials/github.png", alt: "GitHub" },
+  { url: "https://www.linkedin.com/in/christophervu25/", icon: "/socials/linkedin.png", alt: "LinkedIn" },
 ];
 
 const Navbar = () => {
