@@ -25,13 +25,13 @@ const TransitionProvider = ({ children }) => {
         transition={{ duration: 0.5, ease: "easeOut" }}
       /> */}
       <motion.div
-        className="fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-8xl cursor-default z-50 w-fit h-fit pointer-events-none"
+        className="fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-6xl lg:text-8xl cursor-default z-50 w-fit h-fit pointer-events-none"
         initial={{ opacity: 1 }}
         animate={{ opacity: 0 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 uppercase font-normal">
+        <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 uppercase">
           {displayTitle}
         </span>
       </motion.div>
